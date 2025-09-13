@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite" parallel="false">
+    <listeners>
+        <listener class-name="listeners.ExtentTestNGListener"/>
+    </listeners>
+    
+    <!-- Test block for Firefox -->
+    <test name="MakeMyTripTests-Firefox">
+        <parameter name="browser" value="firefox"/>
+        <groups>
+        	<run>
+        		<include name="smoke"/>
+        	</run>
+        </groups>
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.FlightTest"/>
+            <class name="tests.HotelTest"/>
+        </classes>
+    </test>
+</suite>
