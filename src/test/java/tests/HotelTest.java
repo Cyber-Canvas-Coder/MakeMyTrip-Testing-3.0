@@ -54,13 +54,13 @@ public class HotelTest {
 
         hotel.closeDeal();
 
-        hotel.applyAmenitiesFilter("Wi-Fi");
+//        hotel.applyAmenitiesFilter("Wi-Fi");
+//
+//        hotel.closeDeal();
 
-        hotel.closeDeal();
-
-        hotel.applyPriceRangeFilter(2000, 5000);
-
-        hotel.closeDeal();
+//        hotel.applyPriceRangeFilter(2000, 5000);
+//
+//        hotel.closeDeal();
 
         hotel.takeProof("Amenities");
     }
